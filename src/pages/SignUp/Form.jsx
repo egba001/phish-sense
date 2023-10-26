@@ -60,7 +60,7 @@ const Form  = () => {
                     <input type="text" name="username" id="username" placeholder="Name" onChange={handleChange} className="py-3 placeholder:text-gray-600 pl-5 w-full focus:outline-blue bg-[#CBECF0]/[.4] border-gray-200 border rounded-md" />
                     <input type="email" name="email" id="email" onChange={handleChange} placeholder="Email Address" className="py-3 placeholder:text-gray-600 pl-5 w-full focus:outline-blue bg-[#CBECF0]/[.4] border-gray-200 border rounded-md" />
                     <input type="password" name="password" onChange={handleChange} id="password" placeholder="Password" className="py-3 placeholder:text-gray-600 pl-5 w-full focus:outline-blue bg-[#CBECF0]/[.4] border-gray-200 border rounded-md" />
-                    <p className="text-center text-dark/[.7] mb-6">By clicking on “Create Account”, I agree to Weblify’s terms & condition and Privacy policy</p>
+                    <p className="text-center text-dark/[.7] mb-6">By clicking on “Create Account”, I agree to Phishsense’s terms & condition and Privacy policy</p>
                     <div onClick={handleSubmit}>
                         <Button text="Create Account"/>
                     </div>
