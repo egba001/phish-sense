@@ -16,7 +16,7 @@ const ResultOverlay = ({ res, setIsOpen, isOpen }) => {
     return (
         <div className="fixed inset-0 flex items-center justify-center h-screen z-40 w-full  top-0 left-0">
             <div className="w-full h-full bg-white/[.6] absolute" onClick={() => setIsOpen(false)}></div>
-            <div className="w-[90%] bg-white px-10 z-50 rounded-xl border border-gray-500 py-8 lg:w-[40%]">
+            <div className="w-[90%] bg-white px-2 lg:px-10 z-50 rounded-xl border border-gray-500 py-8 lg:w-[40%]">
                 <p className="max-w-[90%] block"><span className="font-bold text-[18px] mr-4 mb-4 text-blue">Link:</span>{res.url}</p>
                 <div><span className="font-bold text-[18px] mr-4 text-blue">AI Prediction:</span>{res.security_checks.ai_flagged === false ? <span className="text-green-500 font-bold text-[18px]">Secure</span> : <span className="text-red-500 text-[18px] font-bold">Warning: Insecure</span>}</div>
                 {/* <p><span className="font-bold text-[18px] mr-4 text-blue">URL:</span>{res.security_checks.url_flagged === false ? <span className="text-green-500 font-bold text-[18px]">Secure</span> : <p className="text-red-500 font-bold text-[18px]">Warning: Insecure</p>}</p> */}
