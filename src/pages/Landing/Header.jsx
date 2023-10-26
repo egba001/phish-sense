@@ -54,7 +54,7 @@ const Header = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100%",
-            height: "80vh",
+            height: "85vh",
             position: 'relative'
           }}
         >
@@ -80,10 +80,10 @@ const Header = () => {
                         <h1 className="text-[40px] font-bold text-center mb-4">Guarding Your Digital World, One Link at a Time</h1>
                         <p className="text-center text-[18px] lg:text-[25px]">Verified Links for a Safer Social Media Experience</p>
                     </div>
-                    <div className="flex items-center justify-center">
-                        <form className="flex items-center space-x-3 mt-24 lg:mt-40" onSubmit={addPosts}>
-                            <input type="url" placeholder="Place link here" onChange={handleChange} value={url} className="bg-white focus:outline-blue text-[#0f0f0f] block rounded-xl py-4 px-2 w-[60%] lg:w-[25rem]" />
-                            <button className="bg-blue py-4 px-4 rounded-xl flex items-center space-x-3" type="submit">
+                    <div className="flex items-center w-full justify-center">
+                        <form className="lg:flex-row items-center flex flex-col justify-center w-[90%] lg:w-fit space-x-3 mt-24 lg:mt-40" onSubmit={addPosts}>
+                            <input type="url" placeholder="Place link here" onChange={handleChange} value={url} className="bg-white focus:outline-blue mb-3 lg:mb-0 mx-auto text-[#0f0f0f] block rounded-xl py-4 px-2 lg:w-[25rem]" />
+                            <button className="bg-blue w-fit mx-auto py-4 px-4 rounded-xl flex items-center space-x-3" type="submit">
                                 <span>Verify Link</span>
                                 {isSending && <ReactLoading type={"spin"} color={"#ffffff"} height={'1rem'} width={'1rem'} />}
                             </button>
