@@ -44,7 +44,7 @@ const Header = () => {
     return (
         <div className="w-full">
         {
-            isOpen && <ResultOverlay res={result} setIsOpen={setIsOpen} />
+            isOpen && <ResultOverlay res={result} setIsOpen={setIsOpen} isOpen={isOpen} />
         }
         <header
         style={{
