@@ -82,7 +82,7 @@ const Header = () => {
                     </div>
                     <div className="flex items-center w-full justify-center">
                         <form className="lg:flex-row items-center flex flex-col justify-center w-[90%] lg:w-fit space-x-3 mt-24 lg:mt-40" onSubmit={addPosts}>
-                            <input type="url" placeholder="Place link here" onChange={handleChange} value={url} className="bg-white focus:outline-blue mb-3 lg:mb-0 mx-auto text-[#0f0f0f] block rounded-xl py-4 px-2 lg:w-[25rem]" />
+                            <input type="url" placeholder="Place link here" onChange={handleChange} required value={url} className="bg-white focus:outline-blue mb-3 lg:mb-0 mx-auto text-[#0f0f0f] block rounded-xl py-4 px-2 lg:w-[25rem]" />
                             <button className="bg-blue w-fit mx-auto py-4 px-4 rounded-xl flex items-center space-x-3" type="submit">
                                 <span>Verify Link</span>
                                 {isSending && <ReactLoading type={"spin"} color={"#ffffff"} height={'1rem'} width={'1rem'} />}
