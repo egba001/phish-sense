@@ -24,7 +24,7 @@ const Header = () => {
            }),
            headers: {
               'Content-type': 'application/json; charset=UTF-8',
-              "Authorization": `Bearer ${import.meta.env.VITE_API_KEY}`,
+              "Authorization": `Bearer eN94Hp4dyo2UQoeOo5sfwPLOfs4SyN9ZHFwdFLFY`,
               "Accept": "application/json",
            },
         })
